@@ -1,0 +1,19 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+  {% include "pages/navbar.html" %}
+  
+  <div class='container'>
+
+    you are logged in as: {{user}}
+    <hr>
+    <p>Goto <a href="/login/">for login page</a> </p>
+    <p>Goto <a href="/profile/">for profile page</a></p>
+    <p>Goto <a href="/admin/">for admin page</a></p>
+    <p>Goto <a href="/logout/">for logout page</a></p>
+    <hr>
+    <h3>Books near you:</h3>
+  
+  </div>
+  
+{% endblock %}
