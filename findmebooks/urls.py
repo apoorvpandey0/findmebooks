@@ -24,6 +24,8 @@ urlpatterns = [
     path('',include('pages.urls')),
     path('',include('books.urls')),
     path('',include('users.urls')),
+    # API URLs
+    path('api/books/',include('books.api.urls')),
 ]
 if settings.DEBUG:              #i.e. in developement mode
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
